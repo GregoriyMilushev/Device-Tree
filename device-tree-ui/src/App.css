@@ -1,0 +1,192 @@
+/* TODO: Add Better Css, and fix the design bug for child device boxes relations */
+
+.tree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.root {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background: #3c3c3b;
+  padding: 15px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 30px;
+
+  position: relative;
+}
+.root::after {
+  content: "";
+  position: absolute;
+
+  height: 30px;
+  width: 1px;
+  background: #3c3c3b;
+  bottom: -30px;
+  left: 50%;
+}
+
+.branches {
+  display: flex;
+  gap: 100px;
+}
+
+.tree-node {
+  padding-top: 10px;
+
+  position: relative;
+}
+
+.branches > .tree-node::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -15px;
+
+  /* half of the container + the gap width */
+  width: calc(100% + 100px);
+  height: 1px;
+  background-color: #3c3c3b;
+}
+
+.branches > .tree-node:first-child::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+
+  /* half of the container + half of the gap */
+  width: calc(50% + 50px);
+  height: 1px;
+  background-color: #3c3c3b;
+}
+
+.branches > .tree-node:last-child::after {
+  content: "";
+  position: absolute;
+  right: 50%;
+  left: auto;
+  width: calc(50% + 50px);
+  height: 1px;
+  background-color: #3c3c3b;
+}
+
+.branches > .tree-node:only-child::after {
+  content: "";
+  position: auto;
+  top: auto;
+  right: auto;
+  left: auto;
+  width: 0;
+  height: 0;
+  background-color: transparent;
+}
+
+.branches > .tree-node:only-child > .device-container::before {
+  content: "";
+  position: absolute;
+
+  height: 0;
+  width: 0;
+  background: transparent;
+  top: auto;
+  left: auto;
+}
+
+.branches > .tree-node:only-child {
+  padding: 0;
+}
+
+.device-container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  background: #3c3c3b;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+
+  position: relative;
+}
+.device-container::before {
+  content: "";
+  position: absolute;
+
+  height: 10px;
+  width: 1px;
+  background: #3c3c3b;
+  top: -10px;
+  left: 50%;
+}
+
+.children-container > .tree-node > .device-container::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -15px;
+
+  /* half of the container + half of the gap */
+  width: calc(100% + 30px);
+  height: 1px;
+  background-color: #3c3c3b;
+}
+
+.children-container > .tree-node:first-child > .device-container::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+
+  /* half of the container + half of the gap */
+  width: calc(50% + 15px);
+  height: 1px;
+  background-color: #3c3c3b;
+}
+
+.children-container > .tree-node:last-child > .device-container::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 50%;
+
+  /* half of the container + half of the gap */
+  width: calc(50% + 15px);
+  height: 1px;
+  background-color: #3c3c3b;
+}
+
+.children-container {
+
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+
+  position: relative;
+}
+
+.has-children {
+  margin: 0 auto;
+  width: fit-content;
+}
+.has-children::after {
+  content: "";
+  position: absolute;
+
+  height: 30px;
+  width: 1px;
+  background: #3c3c3b;
+  bottom: -30px;
+  left: 50%;
+}
+
+.node-description {
+  font-family: "Poppins";
+  margin-bottom: 10px;
+}
+
+.node-title {
+  font-weight: bold;
+  font-family: "Poppins";
+  font-size: 17px;
+}

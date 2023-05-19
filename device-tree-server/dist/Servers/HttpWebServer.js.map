@@ -1,0 +1,1 @@
+{"version":3,"file":"HttpWebServer.js","sourceRoot":"","sources":["../../src/Servers/HttpWebServer.ts"],"names":[],"mappings":";;AAEA,MAAqB,aAAa;IAChC;QACE,MAAM,IAAI,KAAK,CAAC,iBAAiB,CAAC,CAAC;IACrC,CAAC;IAED,KAAK;QACH,MAAM,IAAI,KAAK,CAAC,yBAAyB,CAAC,CAAC;IAC7C,CAAC;IACD,IAAI;QACF,MAAM,IAAI,KAAK,CAAC,yBAAyB,CAAC,CAAC;IAC7C,CAAC;CACF;AAXD,gCAWC"}
