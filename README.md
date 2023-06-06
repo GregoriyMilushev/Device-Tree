@@ -9,17 +9,17 @@ Installation
 
 Install dependencies for the sever:
 cd device-tree-server
-npm install
+<b>npm install</b>
 
 Install dependencies for the client:
 cd ../device-tree-ui
-npm install
+<b>npm install</b>
 
 Usage
 Start the server:
 
 cd device-tree-server
-npx nodemon
+<b>npx nodemon</b>
 or
 npm run build && npm run start
 This will start the server.
@@ -27,7 +27,7 @@ This will start the server.
 Start the client:
 
 cd ../device-tree-ui
-npm run dev
+<b>npm run dev</b>
 This will start the client and open it in your default browser at http://localhost:5173/.
 
 Connect USB devices to the server machine to see the live device tree.
