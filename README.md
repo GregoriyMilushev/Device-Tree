@@ -8,26 +8,27 @@ This project is built using Node.js, React.js, and websockets.
 Installation
 
 Install dependencies for the sever:<br>
-cd device-tree-server<br>
+<b>cd device-tree-server</b><br>
 <b>npm install</b>
 
 Install dependencies for the client:<br>
-cd ../device-tree-ui<br>
+<b>cd ../device-tree-ui</b><br>
 <b>npm install</b>
 
 Usage
-Start the server:
 
-cd device-tree-server<br>
+Start the server:<br>
+<b>cd device-tree-server</b><br>
 <b>npx nodemon</b><br>
 or<br>
 npm run build && npm run start<br>
+
 This will start the server.
 
-Start the client:
-
-cd ../device-tree-ui
+Start the client:<br>
+<b>cd ../device-tree-ui</b><br>
 <b>npm run dev</b>
+
 This will start the client and open it in your default browser at http://localhost:5173/.
 
 Connect USB devices to the server machine to see the live device tree.
