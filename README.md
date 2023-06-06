@@ -7,21 +7,21 @@ This project is built using Node.js, React.js, and websockets.
 
 Installation
 
-Install dependencies for the sever:
-cd device-tree-server
+Install dependencies for the sever:<br>
+cd device-tree-server<br>
 <b>npm install</b>
 
-Install dependencies for the client:
-cd ../device-tree-ui
+Install dependencies for the client:<br>
+cd ../device-tree-ui<br>
 <b>npm install</b>
 
 Usage
 Start the server:
 
-cd device-tree-server
-<b>npx nodemon</b>
-or
-npm run build && npm run start
+cd device-tree-server<br>
+<b>npx nodemon</b><br>
+or<br>
+npm run build && npm run start<br>
 This will start the server.
 
 Start the client:
