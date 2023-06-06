@@ -1,4 +1,4 @@
-Device Tree
+<h1>Device Tree</h1>
 
 Overview
 This project is a client-server solution that presents a live tree of the devices connected via USB to the server's machine. The device tree updates automatically according to device connection/disconnection. The tree is defined in such a way that a USB hub is a branch, and a device is a leaf. The presented information for each device/hub includes vendor and product IDs, type (hub or device), and string descriptor, if available.
